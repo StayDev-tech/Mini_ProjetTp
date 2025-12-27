@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    background: linear-gradient(135deg, brown, rgb(221, 182, 182));
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+fieldset  {
+    margin-left: 5em;
+    /* background: linear-gradient(to top, rgb(148, 37, 37), rgb(207, 143, 143)); */
+    background: #d2bfbf;
+    /* color: white; */
+    border: 2px black solid;
+    border-radius: 15px ;
+    padding: 30px 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    animation: fadeIn 0.6s ease-in-out;
+    width: 700px;
+
+     /* background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 400px;
+    animation: fadeIn 0.6s ease-in-out; */
+}
+
+legend {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    color: black;
+}
+
+input {
+    height: 40px;
+    width: 30%;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: gray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 5px;
+    margin-top: 10px;
+    height: 3em;
+    width: 10em;
+    background-color: rgb(137, 137, 175);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Conteneur de chaque ligne */
+#input, #select {
+    display: flex;
+    justify-content: space-between; /* label à gauche, input à droite */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Label */
+label {
+    flex: 1; /* occupe 1 partie de l’espace */
+    text-align: left;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Input et select */
+input[type="text"], select {
+    flex: 2; /* occupe 2 parties de l’espace */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #fda085;
+    box-shadow: 0 0 5px rgba(253,160,133,0.5);
+    outline: none;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+.success-message {
+        text-align: center;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: green;
+    }
+
+/* CSS PRO */
+
+/* 🌟 Style global
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ /*🌟 Carte du formulaire 
+fieldset {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 400px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* 🌟 Légende stylisée 
+legend {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* 🌟 Champs et labels 
+label {
+    display: block;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #fda085;
+    box-shadow: 0 0 5px rgba(253,160,133,0.5);
+    outline: none;
+}
+
+/* 🌟 Bouton 
+button.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7e5f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.btn:hover {
+    background-color: #eb6750;
+}
+
+/* 🌟 Animation fadeIn 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
+} */
+

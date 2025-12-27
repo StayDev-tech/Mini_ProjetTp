@@ -1,0 +1,21 @@
+<?php include("./connexion/connexion.php") ?>
+
+<?php
+// Permet de verifier si le code est bien present
+if (isset($_GET['code'])) {
+    $code = $_GET['code'];
+
+    $sql = "DELETE FROM produit WHERE code = '$code'";
+    if ($result = mysqli_query($idcon, $sql)) {
+        // echo "Produit supprimé avec succès !";
+        header("Location: affichage.php");
+        exit;
+    } else {
+        echo "Erreur lors de la suppression : " . mysqli_error($idcon);
+    }
+} else {
+    echo "Code du produit invalide.";
+}
+
+mysqli_close($idcon);
+?>

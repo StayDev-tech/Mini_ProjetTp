@@ -1,0 +1,64 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 30px;
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* En-têtes */
+table th {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Cellules */
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Inputs */
+table input[type="text"] {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Bouton */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #057d09;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Centrer le bouton */
+form {
+    text-align: center;
+}
