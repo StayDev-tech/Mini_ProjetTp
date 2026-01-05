@@ -1,0 +1,4 @@
+# Ignorer le fichier de connexion a la BD
+connexion.php
+# Ignorer le fichier de connexion a la BD
+deconnexion.php

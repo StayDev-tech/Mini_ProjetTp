@@ -48,7 +48,7 @@ $result = mysqli_query($idcon, $sql);
 
             </select>
 
-            <button type="submit" name="supprimer">Supprimer</button>
+            <button type="submit" name="supprimer">Afficher</button>
         </form>
     </div>
     <!-- <script>
